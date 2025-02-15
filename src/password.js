@@ -1,3 +1,17 @@
+let lengthInput=document.querySelector("#length").value
+console.log("range inout",lengthInput);
+
+let options=document.querySelector(".options")
+options.addEventListener("click",function(e){
+ if(e.target.tagName==="INPUT"){
+    console.log(e.id);
+    
+ }
+})
+
+
+
+// logic part
 let clutter=""  
 let passwordLength=10
 let upcase=[ "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" ]
