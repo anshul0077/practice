@@ -16,6 +16,11 @@ let upper=document.querySelector("#uppercaseCb")
 let digit=document.querySelector("#digitsCb")
 let speci=document.querySelector("#specialsCb")
 let btn =document.querySelector(".generate")
+let copy=document.querySelector("#copybtn")
+copy.addEventListener("click",()=>{
+    navigator.clipboard.writeText(display.textContent)
+})
+
 function selector(){
     if(lower.checked){
         console.log("lower is checkd"); 
